@@ -7,7 +7,6 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using System.Web.OData;
 
 namespace HighScores.WinAPI.Controllers
 {
@@ -15,11 +14,10 @@ namespace HighScores.WinAPI.Controllers
     public class PlayersController : ApiController
     {
         // GET: api/Players
-        [EnableQuery()]
-        public IQueryable<Player> Get()
+        public IEnumerable<Player> Get()
         {
             var playerRepository = new PlayerRepository();
-            return playerRepository.Retrieve().AsQueryable();
+            return playerRepository.Retrieve();
         }
 
         public IEnumerable<Player> Get(string search)
