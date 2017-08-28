@@ -1,0 +1,19 @@
+﻿[
+  {
+    "Id": 1,
+    "Username": "player_1",
+    "Score": 27678
+  },
+
+  {
+    "Id": 2,
+    "Username": "player_2",
+    "Score": 46847
+  },
+
+  {
+    "Id": 3,
+    "Username": "player_3",
+    "Score": 9254
+  }
+]

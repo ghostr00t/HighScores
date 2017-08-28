@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HighScores</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="highScores">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">HighScores</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-include="'app/players/highScoresView.html'"></div>
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="app/app.js"></script>
+    <script src="common/common.services.js"></script>
+    <script src="common/playerResource.js"></script>
+    <script src="app/players/highScoresCtrl.js"></script>
+</body>
+</html>
